@@ -18,7 +18,7 @@ APPEND_ROUNDS   = 3         # The number of rounds to execute the append operati
 THRESHOLD       = 0.90      # Allowable detection threshold (lower is more strict)
 # ==================================================================================================
 
-SAMPLE_FOLDER = "secml_malware/data/malware_samples/test_folder"
+SAMPLE_FOLDER = "secml_malware/data/malware_samples/"
 
 net = MalConv()
 net = CClassifierEnd2EndMalware(net)

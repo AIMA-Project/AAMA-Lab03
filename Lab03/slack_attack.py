@@ -22,7 +22,7 @@ EPSILON = 0.4  # The amount of noise introduced into the generated sample.
 ITERATIONS = 5 # The number of times the algorithm will be ran on the sample.
 # ==================================================================================================
 
-SAMPLE_FOLDER = "secml_malware/data/malware_samples/test_folder"
+SAMPLE_FOLDER = "secml_malware/data/malware_samples/"
 
 fgsm = CKreukEvasion(net, how_many_padding_bytes=PADDING, epsilon=EPSILON, iterations=ITERATIONS)
 

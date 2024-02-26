@@ -1,2 +1,9 @@
+torch
+torchvision
 python-magic
 secml
+lightgbm
+git+https://github.com/elastic/ember.git
+tqdm
+pandas
+lief

@@ -4,6 +4,7 @@ FROM python:3.10.13-bullseye
 # Create the user "lab3"
 RUN useradd -ms /bin/bash lab3
 WORKDIR /home/lab3
+ENTRYPOINT /bin/bash
 
 # Setup project dependencies
 COPY requirements.txt /home/lab3/
