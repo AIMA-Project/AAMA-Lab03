@@ -14,6 +14,9 @@ COPY resources/stage2_requirements.txt .
 RUN pip3 install -r stage2_requirements.txt
 
 # Move lab code over to container during building
-COPY resources/secml_malware .
+COPY resources/secml_malware secml_malware/.
 COPY resources/padding_attack.py .
 COPY resources/slack_attack.py .
+
+# Get rid of empty files used to force directory detection in git
+RUN rm "secml_malware/data/goodware_samples/benign files go here" "secml_malware/data/malware_samples/malware goes here"
