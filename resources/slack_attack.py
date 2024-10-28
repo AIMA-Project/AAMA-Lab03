@@ -17,9 +17,9 @@ net.load_pretrained_model()
 # | provided executable files. After the attack is applied and an adversarial sample generated,    |
 # | the estimated effectiveness of that sample will be calculated and provided in the terminal.    |
 # +------------------------------------------------------------------------------------------------+
-PADDING = 4096 # The number of bytes of data that will pad out the executable.
-EPSILON = 0.4  # The amount of noise introduced into the generated sample.
-ITERATIONS = 5 # The number of times the algorithm will be ran on the sample.
+PADDING = 64      # The number of bytes of data that will pad out the executable.
+EPSILON = 0.0001  # The amount of noise introduced into the generated sample.
+ITERATIONS = 1    # The number of times the algorithm will be ran on the sample.
 # ==================================================================================================
 
 SAMPLE_FOLDER = "secml_malware/data/malware_samples/"

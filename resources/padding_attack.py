@@ -13,9 +13,9 @@ from secml_malware.attack.whitebox import CPaddingEvasion
 # | provided executable files. After the attack is applied and an adversarial sample generated,    |
 # | the estimated effectiveness of that sample will be calculated and provided in the terminal.    |
 # +------------------------------------------------------------------------------------------------+
-BYTES_TO_APPEND = 512       # Number of bytes appended to file at the end of each round
-APPEND_ROUNDS   = 3         # The number of rounds to execute the append operation
-THRESHOLD       = 0.90      # Allowable detection threshold (lower is more strict)
+BYTES_TO_APPEND = 64       # Number of bytes appended to file at the end of each round
+APPEND_ROUNDS   = 1        # The number of rounds to execute the append operation
+THRESHOLD       = 0.01     # Allowable detection threshold (lower is more strict)
 # ==================================================================================================
 
 SAMPLE_FOLDER = "secml_malware/data/malware_samples/"
